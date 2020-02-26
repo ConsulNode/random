@@ -53,7 +53,7 @@ const getDelegators = (coins) => (
                 address: d.address,
                 total_value: +d.bip_value,
               });
-            } else delegators[index].total_value += +item.bip_value;
+            } else delegators[index].total_value += +d.bip_value;
           }
         });
 
